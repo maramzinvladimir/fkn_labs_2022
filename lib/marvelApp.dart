@@ -20,13 +20,22 @@ class MarvelApp extends StatelessWidget {
       "Tanos"
     ];
     var paths = [
-      "assets/images/1.jpg",
-      "assets/images/2.jpg",
-      "assets/images/3.jpg",
-      "assets/images/4.jpg",
-      "assets/images/5.jpg",
-      "assets/images/6.jpg",
-      "assets/images/7.jpg"
+      "https://avatars.mds.yandex.net/i?id=c164f9da1e7fc10fc485025088a32bc0-5225010-images-thumbs&n=13",
+      "https://avatars.dzeninfra.ru/get-zen_doc/1578824/pub_5fc633c26d4e6a5c3f278bbf_5fc633c94fa3013b2306b59c/scale_1200",
+      "https://avatars.mds.yandex.net/i?id=7ae31210d495313ca8a9f7aac57ac540-5660573-images-thumbs&n=13",
+      "https://img1.goodfon.ru/wallpaper/nbig/3/fc/the-amazing-spider-man-spider-698.jpg",
+      "https://avatars.dzeninfra.ru/get-zen_doc/2455156/pub_5f3335fee3b49663014a4bde_5f3338096dfb3a749c2b6a8f/scale_1200",
+      "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/ffd54804-7a46-4761-b007-8ace80460bd3/3840x",
+      "https://avatars.mds.yandex.net/i?id=57d92307fc042a1904ee1af50e8756ac9bf914f6-5303267-images-thumbs&n=13"
+    ];
+    var description = [
+      "Deadpool description",
+      "Iron Man description",
+      "Captain America description",
+      "Spiderman description",
+      "Doctor Strange description",
+      "Thor description",
+      "Thanos description",
     ];
 
     return MaterialApp(
@@ -65,6 +74,7 @@ class MarvelApp extends StatelessWidget {
                         child: CardWidget(
                           path: paths[index],
                           hero: heroes[index],
+                          description: description[index],
                         ));
                   },
                 ),
