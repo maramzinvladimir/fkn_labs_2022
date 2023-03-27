@@ -41,16 +41,16 @@ class DetailScreen extends StatelessWidget {
                 children: [
                   Text(
                     hero,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontSize: 30,
                     ),
                   ),
-                  Padding(padding: EdgeInsets.all(5.0)),
+                  const Padding(padding: EdgeInsets.all(5.0)),
                   Text(
                     description,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Color.fromARGB(255, 247, 246, 246),
                       fontSize: 25,
